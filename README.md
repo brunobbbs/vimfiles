@@ -20,5 +20,5 @@ E está instalado as suas configurações.
 
 ## Como contribuir
 
-1. Fazendo o fork do projeto [aqui](https://github.com/gilsondev/vimfiles/splinter#fork_box).
+1. Fazendo o fork do projeto.
 2. Colocando suas sugestões e dicas [aqui](https://github.com/gilsondev/vimfiles/issues).
