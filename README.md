@@ -2,4 +2,23 @@
 
 Aqui armazeno todas as configurações do meu Vim de cada dia.
 
-Licença: GPL
+## Instalação
+
+1. Faça o checkout do projeto:
+
+```bash
+$ git clone git@github.com:gilsondev/vimfiles.git ~/.vim
+```
+
+2. Crie um link simbólico para o arquivo de configuração ``.vimrc``:
+
+```bash
+$ ln ~/.vim/.vimrc ~/
+```
+
+E está instalado as suas configurações.
+
+## Como contribuir
+
+1. Fazendo o fork do projeto [aqui](https://github.com/gilsondev/vimfiles/splinter#fork_box).
+2. Colocando suas sugestões e dicas [aqui](https://github.com/gilsondev/vimfiles/issues).
