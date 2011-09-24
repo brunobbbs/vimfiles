@@ -34,7 +34,11 @@ set sessionoptions+=winpos " What should be saved during sessions being saved
 set popt+=syntax:y " Syntax when printing
 set showcmd " show the command being typed
 set guioptions-=T "disable toolbar
-set lines=38 columns=150 "Size
+
+if has("gui_running")
+	set lines=38 columns=150 "Size
+endif
+
 set linespace=0 " space it out a little more (easier to read)
 set wildmenu " turn on wild menu
 set wildmode=list:longest " turn on wild menu in special format (long format)
