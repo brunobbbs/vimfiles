@@ -126,14 +126,19 @@ inoremap <F8> <ESC>mzgg=G`z<Insert>
 
 " Tab navigation
 
+noremap <C-S-N> :tabnew <CR>
+inoremap <C-S-N> :tabnew <CR><Insert>
+
 noremap <C-Right> :tabn<CR>
 inoremap <C-Right> <esc>:tabn<CR><Insert>
+
 noremap <C-Left> :tabprev<CR>
 inoremap <C-Left> <ESC>tabprev<CR><Insert>
 " }
 
 " Shortcut Save (default in others editors) {
 noremap <C-S> :w<CR>
+inoremap <C-S> <ESC>:w<CR><Insert>
 noremap <C-X> :x<CR>
 noremap <C-C> :y <CR>
 " }
