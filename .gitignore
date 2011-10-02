@@ -1,0 +1,7 @@
+# Arquivos temporarios
+*.swp
+
+# Pasta de notas
+misc/notes/*.*
+misc/notes/user/*.*
+
