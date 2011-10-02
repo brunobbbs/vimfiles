@@ -8,7 +8,8 @@ filetype plugin indent on " load filetype plugins and indent settings
 if has("gui_running")
 	" colorscheme wombat-original
 	" colorscheme solarized
-	colorscheme underwater-mod
+	" colorscheme underwater-mod
+	colorscheme railscasts
 	set guifont=Monaco\ 10
 
 endif
