@@ -10,7 +10,8 @@ if has("gui_running")
 	" colorscheme solarized
 	" colorscheme underwater-mod
 	colorscheme railscasts
-	set guifont=Monaco\ 10
+
+	set guifont=Ubuntu\ Mono\ 11
 
 endif
 " }
