@@ -1,6 +1,9 @@
 # Arquivos temporarios
 *.swp
 
+# Arquivos python compilados
+*.pyc
+
 # Pasta de notas
 misc/notes/*.*
 misc/notes/user/*.*

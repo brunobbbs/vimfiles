@@ -8,10 +8,10 @@ filetype plugin indent on " load filetype plugins and indent settings
 if has("gui_running")
 	" colorscheme wombat-original
 	" colorscheme solarized
-	" colorscheme underwater-mod
-	colorscheme railscasts
+	colorscheme underwater-mod
+	" colorscheme railscasts
 
-	set guifont=Ubuntu\ Mono\ 11
+	set guifont=Monaco\ 10
 
 endif
 " }
@@ -35,10 +35,10 @@ set sessionoptions+=winpos " What should be saved during sessions being saved
 " Vim UI {
 set popt+=syntax:y " Syntax when printing
 set showcmd " show the command being typed
-set guioptions-=T "disable toolbar
+set guioptions=ae "adding others
 
 if has("gui_running")
-	set lines=38 columns=150 "Size
+	set lines=40 columns=155 "Size
 endif
 
 set linespace=0 " space it out a little more (easier to read)
@@ -69,12 +69,12 @@ set showmatch " show matching brackets
 set matchtime=5 " how many tenths of a second to blink matching brackets for
 set hlsearch
 set incsearch " BUT do highlight as you type you search phrase
-set scrolloff=5 " Keep 5 lines (top/bottom) for scope
+set scrolloff=3 " Keep 5 lines (top/bottom) for scope
 set sidescrolloff=5 " Keep 5 lines at the size
 "set novisualbell " don't blink
 set vb " blink instead beep
-set statusline=%f%m%r%h%w\ [POS=%04l,%04v][%p%%]\ [LEN=%L]
-"set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [ENCODE=%{&fenc}]\ [POS=%04l,%04v][%p%%]\ [LEN=%L]
+" set statusline=%f%m%r%h%w\ [POS=%04l,%04v][%p%%]\ [LEN=%L]
+set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [ENCODE=%{&fenc}]\ [POS=%04l,%04v][%p%%]\ [LEN=%L]
 set laststatus=2 " always show the status line
 " }
 
@@ -101,24 +101,20 @@ set nocursorcolumn " show the current column
 " }
 
 " Folding {
-set foldenable			" Turn on folding
-set foldmarker={,}		" Fold C style code (only use this as default if you use a high foldlevel)
-set foldcolumn=4		" Give 1 column for fold markers
-"set foldopen-=search	" don't open folds when you search into them
-"set foldopen-=undo		" don't open folds when you undo stuff
-set foldmethod=marker " Fold on the marker
-set foldlevel=1000 " Don't autofold anything (but I can still fold manually)
+" set foldenable			" Turn on folding
+" set foldmarker={,}		" Fold C style code (only use this as default if you use a high foldlevel)
+" set foldcolumn=4		" Give 1 column for fold markers
+" set foldopen-=search	" don't open folds when you search into them
+" set foldopen-=undo		" don't open folds when you undo stuff
+" set foldmethod=marker " Fold on the marker
+" set foldlevel=1000 " Don't autofold anything (but I can still fold manually)
+
+set foldmethod=indent   "fold based on indent
+set foldnestmax=10      "deepest fold is 10 levels
+set nofoldenable        "dont fold by default
+set foldlevel=1         "this is just what i use
 " }
 
-" Folding {
-set foldenable			" Turn on folding
-set foldmarker={,}		" Fold C style code (only use this as default if you use a high foldlevel)
-set foldcolumn=4		" Give 1 column for fold markers
-"set foldopen-=search	" don't open folds when you search into them
-"set foldopen-=undo		" don't open folds when you undo stuff
-set foldmethod=marker " Fold on the marker
-set foldlevel=1000 " Don't autofold anything (but I can still fold manually)
-" }
 
 " Mappings {
 
@@ -151,6 +147,10 @@ noremap <C-B> :NERDTreeToggle<CR>
 
 " Shortcuts Fuzzy Finder {
 noremap <C-P> :FufFile<CR>
+noremap <C-M-P> :FufBookmarkDir<CR>
+noremap <C-M-A> :FufBookmarkDirAdd<CR>
+
+
 " }
 
 function LoadDjangoGoodies()
