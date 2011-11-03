@@ -120,58 +120,78 @@ snippet f_xml
 	${1:FIELDNAME} = forms.XMLField(schema_path=${2:None}${3:, blank=True})
 # Relational Fields
 snippet f_fk
-	${1:FIELDNAME} = forms.ForeignKey(${2:OtherModel}${3:, related_name=''}${4:, limit_choices_to=}${5:, to_field=''})
+	${1:FIELDNAME} = forms.ModelChoiceField(${2:, queryset=Model.objects.all()}${3:, empty_label=''})
 snippet f_m2m
-	${1:FIELDNAME} = forms.ManyToManyField(${2:OtherModel}${3:, related_name=''}${4:, limit_choices_to=}${5:, symmetrical=False}${6:, through=''}${7:, db_table=''})
-snippet f_o2o
-	${1:FIELDNAME} = forms.OneToOneField(${2:OtherModel}${3:, parent_link=True}${4:, related_name=''}${5:, limit_choices_to=}${6:, to_field=''})	
+	${1:FIELDNAME} = forms.ModelMultipleChoiceField(${2:, queryset=Model.objects.all()}${3:, empty_label=''})
+
+##
+## Code Skeletons
+##
+
+# Methods
+
+snippet __unicode__
+	def __unicode__(self):
+		${1}
+
+snippet get_absolute_url
+    @models.permalink
+    def get_absolute_url(self):
+        return ('${1:view_or_url_name}' ${2})
 
 
-# Code Skeletons
+# Form and Models
 
 snippet form
-	class ${1:FormName}(forms.Form):
-		"""${2:docstring}"""
-		${3}
+    class ${1:FormName}(forms.Form):
+        """${2:docstring}"""
+        ${3}
 
 snippet model
-	class ${1:ModelName}(models.Model):
-		"""${2:docstring}"""
-		${3}
-		
-		class Meta:
-			${4}
-		
-		def __unicode__(self):
-			${5}
-		
-		def save(self, force_insert=False, force_update=False):
-			${6}
-		
-		@models.permalink
-		def get_absolute_url(self):
-			return ('${7:view_or_url_name}' ${8})
+    class ${1:ModelName}(models.Model):
+        """${2:docstring}"""
+        ${3}
+        
+        class Meta:
+            ${4}
+        
+        def __unicode__(self):
+            ${5}
+        
+        def save(self, force_insert=False, force_update=False):
+            ${6}
+        
+        @models.permalink
+        def get_absolute_url(self):
+            return ('${7:view_or_url_name}' ${8})
+
+# Admin
 
 snippet modeladmin
-	class ${1:ModelName}Admin(admin.ModelAdmin):
-		${2}
-	
-	admin.site.register($1, $1Admin)
-	
-snippet r2r
-	return render_to_response('${1:template.html}', {
-			${2}
-		}${3:, context_instance=RequestContext(request)}
-	)
+    class ${1:ModelName}Admin(admin.ModelAdmin):
+        ${2}
+    
+    admin.site.register($1, $1Admin)
 
 snippet tabularinline
-	class ${1:ModelName}Inline(admin.TabularInline):
-		model = $1
-		extra = ${2:3}
+    class ${1:ModelName}Inline(admin.TabularInline):
+        model = $1
+        extra = ${2:3}
 
 snippet stackedinline
-	class ${1:ModelName}Inline(admin.StackedInline):
-		model = $1
-		extra = ${2:3}
+    class ${1:ModelName}Inline(admin.StackedInline):
+        model = $1
+        extra = ${2:3}
 
+# Views
 
+snippet r2r
+    return render_to_response('${1:template.html}', {
+            ${2}
+        }${3:, context_instance=RequestContext(request)}
+    )
+
+snippet action
+    def ${1:action}(request):
+        """ Action """
+        pass
