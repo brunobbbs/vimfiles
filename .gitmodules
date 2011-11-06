@@ -31,3 +31,6 @@
 [submodule "bundle/fontzoom"]
 	path = bundle/fontzoom
 	url = git://github.com/vim-scripts/fontzoom.vim.git
+[submodule "bundle/vim-colors-solarized"]
+	path = bundle/vim-colors-solarized
+	url = git://github.com/altercation/vim-colors-solarized.git
