@@ -61,3 +61,6 @@
 [submodule "bundle/vim-pep8"]
 	path = bundle/vim-pep8
 	url = git://github.com/jbking/vim-pep8.git
+[submodule "bundle/vim-git"]
+	path = bundle/vim-git
+	url = git://github.com/tpope/vim-git.git
