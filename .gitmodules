@@ -34,3 +34,6 @@
 [submodule "bundle/vim-colors-solarized"]
 	path = bundle/vim-colors-solarized
 	url = git://github.com/altercation/vim-colors-solarized.git
+[submodule "bundle/underwater-mod"]
+	path = bundle/underwater-mod
+	url = git://github.com/vim-scripts/underwater-mod.git
