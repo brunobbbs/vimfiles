@@ -40,3 +40,6 @@
 [submodule "vim-wombat"]
 	path = vim-wombat
 	url = git://github.com/cschlueter/vim-wombat.git
+[submodule "bundle/railscasts-theme"]
+	path = bundle/railscasts-theme
+	url = git://github.com/jpo/vim-railscasts-theme.git
