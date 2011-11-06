@@ -16,9 +16,16 @@ $ git clone git@github.com:gilsondev/vimfiles.git ~/.vim
 $ ln ~/.vim/.vimrc ~/
 ```
 
-3. Para usar o plugin pep8.vim terá que seguir as seguintes instruções [aqui](http://www.vim.org/scripts/script.php?script_id=2914)
+3. Faça o checkout dos submódulos instalados:
 
-4. Com o plugin pyflakes também as instruções estão [aqui](https://github.com/kevinw/pyflakes-vim#readme)
+```bash
+$ git submodule init
+$ git submodule update
+```
+
+4. Para usar o plugin pep8.vim terá que seguir as seguintes instruções [aqui](http://www.vim.org/scripts/script.php?script_id=2914)
+
+5. Com o plugin pyflakes também as instruções estão [aqui](https://github.com/kevinw/pyflakes-vim#readme)
 
 E está instalado as suas configurações.
 
