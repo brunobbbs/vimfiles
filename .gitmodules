@@ -28,3 +28,6 @@
 [submodule "bundle/matchit"]
 	path = bundle/matchit
 	url = git://github.com/vim-scripts/matchit.zip.git
+[submodule "bundle/fontzoom"]
+	path = bundle/fontzoom
+	url = git://github.com/vim-scripts/fontzoom.vim.git
