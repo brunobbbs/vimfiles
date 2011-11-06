@@ -4,3 +4,6 @@
 [submodule "bundle/notes"]
 	path = bundle/notes
 	url = git://github.com/vim-scripts/notes.vim.git
+[submodule "bundle/NERD_Tree"]
+	path = bundle/NERD_Tree
+	url = git://github.com/vim-scripts/The-NERD-tree.git
