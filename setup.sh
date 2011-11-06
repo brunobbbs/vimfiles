@@ -19,3 +19,5 @@ sleep 2
 wget http://www.vim.org/scripts/download_script.php?src_id=14366
 mv download_script.php\?src_id\=14366 pep8.vim
 mv pep8.vim ~/.vim/bundle/pyflakes-vim/ftplugin/python
+echo "O programa GIT não está instalado. Faça a sua instaação."
+exit
