@@ -6,6 +6,13 @@ sleep 2
 git submodule init
 git submodule update
 
+# Configurando pyflakes-vim
+echo "Fazendo o checkout e configuração do pyflakes-vim..."
+sleep 2
+cd ~/.vim/bundle/pyflakes-vim
+git submodule init
+git submodule update
+
 # Inserindo o pep8.vim
 echo "Fazendo o download do pep8.vim e configurando-o."
 sleep 2
