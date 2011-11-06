@@ -1,14 +1,14 @@
 " Basics {
 set nocompatible " get out of horrible vi-compatible mode
-set background=dark " we are using a dark background
-" set background=light " we are using a light background
+"set background=dark " we are using a dark background
+set background=light " we are using a light background
 syntax on " syntax highlighting on
 filetype plugin indent on " load filetype plugins and indent settings
 
 if has("gui_running")
 	" colorscheme wombat-original
-	" colorscheme solarized
-	colorscheme underwater-mod
+	colorscheme solarized
+	" colorscheme underwater-mod
 	" colorscheme railscasts
 
 	set guifont=Monaco\ 10
@@ -35,10 +35,10 @@ set sessionoptions+=winpos " What should be saved during sessions being saved
 " Vim UI {
 set popt+=syntax:y " Syntax when printing
 set showcmd " show the command being typed
-set guioptions=ae "adding others
+set guioptions=aer "adding others
 
 if has("gui_running")
-	set lines=40 columns=155 "Size
+	set lines=41 columns=155 "Size
 endif
 
 set linespace=0 " space it out a little more (easier to read)
