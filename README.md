@@ -2,7 +2,16 @@
 
 Aqui armazeno todas as configurações do meu Vim de cada dia.
 
-## Instalação
+## Instalação Automática
+
+Basta somente dar permissão de execução no arquivo ``setup.py`` e rodá-lo:
+
+```bash
+$ chmod +x setup.sh
+$ ./setup.py
+```
+
+## Instalação em Modo Manual
 
 1. Faça o checkout do projeto:
 
