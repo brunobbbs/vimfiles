@@ -46,3 +46,6 @@
 [submodule "bundle/github_theme"]
 	path = bundle/github_theme
 	url = git://github.com/nono/github_vim_theme.git
+[submodule "bundle/pyflakes-vim"]
+	path = bundle/pyflakes-vim
+	url = git://github.com/kevinw/pyflakes-vim.git
