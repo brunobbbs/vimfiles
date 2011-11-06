@@ -2,6 +2,12 @@
 set nocompatible " get out of horrible vi-compatible mode
 "set background=dark " we are using a dark background
 set background=light " we are using a light background
+
+" Configuring Pathogen {
+call pathogen#runtime_append_all_bundles()
+" }
+
+call pathogen#helptags()
 syntax on " syntax highlighting on
 filetype plugin indent on " load filetype plugins and indent settings
 
