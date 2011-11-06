@@ -7,3 +7,6 @@
 [submodule "bundle/NERD_Tree"]
 	path = bundle/NERD_Tree
 	url = git://github.com/vim-scripts/The-NERD-tree.git
+[submodule "bundle/FuzzyFinder"]
+	path = bundle/FuzzyFinder
+	url = git://github.com/vim-scripts/FuzzyFinder.git
