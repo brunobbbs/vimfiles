@@ -1,6 +1,33 @@
 # Vim Files
 
-Aqui armazeno todas as configurações do meu Vim de cada dia.
+Aqui armazeno todas as configurações de plugins, snippets e esquema de cores para o Vim:
+
+#### Plugins e Snippets
+1. Fuzzy Finder: https://github.com/vim-scripts/FuzzyFinder
+2. L9: https://github.com/vim-scripts/L9
+3. NERD_Tree: https://github.com/vim-scripts/The-NERD-tree
+4. Fontzoom: https://github.com/vim-scripts/fontzoom.vim
+5. Fugitive: https://github.com/tpope/vim-fugitive
+6. JSON Highlight: https://github.com/vim-scripts/JSON.vim
+7. Matchit: https://github.com/vim-scripts/matchit.zip
+8. Vim Notes: https://github.com/vim-scripts/notes.vim
+9. Pyflakes: https://github.com/kevinw/pyflakes-vim
+10. Rest Hightlight (reEstructureText): https://github.com/vim-scripts/rest.vim
+11. Session Man: https://github.com/vim-scripts/sessionman.vim
+12. Snipmate: https://github.com/msanders/snipmate.vim
+13. Snipmate for Django: https://github.com/gilsondev/snipmate_for_django
+14. Surround: https://github.com/tpope/vim-surround
+15. Vim Git: https://github.com/tpope/vim-git
+16. Markdown Hightlight: https://github.com/plasticboy/vim-markdown
+17. Vim PEP8: https://github.com/jbking/vim-pep8
+18. Sparkup: https://github.com/kogakure/vim-sparkup
+
+#### Esquema de Cores
+1. Github Theme: https://github.com/nono/github_vim_theme
+2. Railscasts Theme: https://github.com/jpo/vim-railscasts-theme
+3. Underwater: https://github.com/vim-scripts/underwater-mod (recomendado)
+4. Solarized: https://github.com/altercation/vim-colors-solarized (recomendado)
+
 
 ## Instalação Automática
 
