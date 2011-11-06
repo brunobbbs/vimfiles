@@ -37,3 +37,6 @@
 [submodule "bundle/underwater-mod"]
 	path = bundle/underwater-mod
 	url = git://github.com/vim-scripts/underwater-mod.git
+[submodule "vim-wombat"]
+	path = vim-wombat
+	url = git://github.com/cschlueter/vim-wombat.git
