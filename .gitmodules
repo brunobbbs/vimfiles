@@ -64,3 +64,6 @@
 [submodule "bundle/vim-git"]
 	path = bundle/vim-git
 	url = git://github.com/tpope/vim-git.git
+[submodule "bundle/sparkup"]
+	path = bundle/sparkup
+	url = git://github.com/kogakure/vim-sparkup.git
