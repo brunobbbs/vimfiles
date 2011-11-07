@@ -162,6 +162,13 @@ noremap <C-B> :NERDTreeToggle<CR>
 noremap <C-P> :LustyFilesystemExplorerFromHere<CR>
 " }
 
+" Shortcuts Fontzoom {
+nnoremap <silent> <Plug>(fontzoom-larger)
+\                 :<C-u>Fontzoom +<C-r>=v:count1<CR><CR>
+nnoremap <silent> <Plug>(fontzoom-smaller)
+\                 :<C-u>Fontzoom _<C-r>=v:count1<CR><CR>
+" }
+
 function LoadDjangoGoodies()
 
 	" Django customization
