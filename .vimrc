@@ -152,11 +152,13 @@ noremap <C-B> :NERDTreeToggle<CR>
 " }
 
 " Shortcuts Fuzzy Finder {
-noremap <C-P> :FufFile<CR>
-noremap <C-M-P> :FufBookmarkDir<CR>
-noremap <C-M-A> :FufBookmarkDirAdd<CR>
+" noremap <C-P> :FufFile<CR>
+" noremap <C-M-P> :FufBookmarkDir<CR>
+" noremap <C-M-A> :FufBookmarkDirAdd<CR>
+" }
 
-
+" Shortcuts Lusty {
+noremap <C-P> :LustyFilesystemExplorer<CR>
 " }
 
 function LoadDjangoGoodies()
