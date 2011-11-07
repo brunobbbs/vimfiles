@@ -70,3 +70,6 @@
 [submodule "bundle/tcomment"]
 	path = bundle/tcomment
 	url = git://github.com/tomtom/tcomment_vim.git
+[submodule "bundle/vim-mercurial"]
+	path = bundle/vim-mercurial
+	url = git://github.com/DasIch/vim-mercurial.git
