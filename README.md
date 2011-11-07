@@ -3,8 +3,7 @@
 Aqui armazeno todas as configurações de plugins, snippets e esquema de cores para o Vim:
 
 #### Plugins e Snippets
-1. Fuzzy Finder: https://github.com/vim-scripts/FuzzyFinder
-2. L9: https://github.com/vim-scripts/L9
+1. Lusty: https://github.com/sjbach/lusty
 3. NERD_Tree: https://github.com/vim-scripts/The-NERD-tree
 4. Fontzoom: https://github.com/vim-scripts/fontzoom.vim
 5. Fugitive: https://github.com/tpope/vim-fugitive
@@ -21,6 +20,7 @@ Aqui armazeno todas as configurações de plugins, snippets e esquema de cores p
 16. Markdown Hightlight: https://github.com/plasticboy/vim-markdown
 17. Vim PEP8: https://github.com/jbking/vim-pep8
 18. Sparkup: https://github.com/kogakure/vim-sparkup
+19. TComment: https://github.com/tomtom/tcomment_vim
 
 #### Esquema de Cores
 1. Github Theme: https://github.com/nono/github_vim_theme
