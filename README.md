@@ -56,7 +56,7 @@ $ ln ~/.vim/.vimrc ~/
 
 ```bash
 $ git submodule init
-$ git submodule update
+$ git submodule update --init --recursive
 ```
 
 4. Para usar o plugin pep8.vim terá que seguir as seguintes instruções [aqui](http://www.vim.org/scripts/script.php?script_id=2914)

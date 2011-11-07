@@ -18,6 +18,7 @@ if has("gui_running")
 	" colorscheme railscasts
 
 	set guifont=Monaco\ 10
+	set fuoptions=maxvert,maxhorz
 
 endif
 " }
@@ -158,7 +159,7 @@ noremap <C-B> :NERDTreeToggle<CR>
 " }
 
 " Shortcuts Lusty {
-noremap <C-P> :LustyFilesystemExplorer<CR>
+noremap <C-P> :LustyFilesystemExplorerFromHere<CR>
 " }
 
 function LoadDjangoGoodies()
