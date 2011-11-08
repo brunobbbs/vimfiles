@@ -22,6 +22,7 @@ Aqui armazeno todas as configurações de plugins, snippets e esquema de cores p
 18. Vim PEP8: https://github.com/jbking/vim-pep8
 19. Sparkup: https://github.com/kogakure/vim-sparkup
 20. TComment: https://github.com/tomtom/tcomment_vim
+21. Vim LaTeX: https://github.com/jcf/vim-latex
 
 #### Esquema de Cores
 1. Github Theme: https://github.com/nono/github_vim_theme
