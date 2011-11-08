@@ -73,3 +73,6 @@
 [submodule "bundle/vim-mercurial"]
 	path = bundle/vim-mercurial
 	url = git://github.com/DasIch/vim-mercurial.git
+[submodule "bundle/vim-latex"]
+	path = bundle/vim-latex
+	url = git://github.com/jcf/vim-latex.git
