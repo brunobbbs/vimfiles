@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Criando link simbolico do arquivo .vimrc
+ln -s ~/.vim/.vimrc ~/.vimrc
+
 # Fazendo o checkout dos plugins
 echo "Fazendo o checkout dos plugins e esquemas de cores..."
 sleep 2
