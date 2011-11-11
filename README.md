@@ -17,8 +17,8 @@ Aqui armazeno todas as configurações de plugins, snippets e esquema de cores p
 13. Snipmate for Django: https://github.com/gilsondev/snipmate_for_django
 14. Surround: https://github.com/tpope/vim-surround
 15. Vim Git: https://github.com/tpope/vim-git
-16. Vim Mercurial: https://github.com/DasIch/vim-mercurial.git
-17. Markdown Hightlight: https://github.com/plasticboy/vim-markdown
+16. Vim Mercurial: https://github.com/DasIch/vim-mercurial
+17. Vim Markdown: https://github.com/tpope/vim-markdown
 18. Vim PEP8: https://github.com/jbking/vim-pep8
 19. Sparkup: https://github.com/kogakure/vim-sparkup
 20. TComment: https://github.com/tomtom/tcomment_vim
