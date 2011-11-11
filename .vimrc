@@ -18,7 +18,6 @@ if has("gui_running")
 	" colorscheme railscasts
 
 	set guifont=Monaco\ 10
-	set fuoptions=maxvert,maxhorz
 
 endif
 " }
