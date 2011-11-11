@@ -49,9 +49,6 @@
 [submodule "bundle/json.vim"]
 	path = bundle/json.vim
 	url = git://github.com/vim-scripts/JSON.vim.git
-[submodule "bundle/vim-markdown"]
-	path = bundle/vim-markdown
-	url = git://github.com/plasticboy/vim-markdown.git
 [submodule "bundle/rest.vim"]
 	path = bundle/rest.vim
 	url = git://github.com/vim-scripts/rest.vim.git
