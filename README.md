@@ -34,13 +34,13 @@ Aqui armazeno todas as configurações de plugins, snippets e esquema de cores p
 
 ## Instalação Automática
 
-1. Faça o checkout do projeto:
+ - Faça o checkout do projeto:
 
 ```bash
 $ git clone git@github.com:gilsondev/vimfiles.git ~/.vim
 ```
 
-2. Dê permissão de execução no arquivo ``setup.sh`` e rodá-lo:
+ - Dê permissão de execução no arquivo ``setup.sh`` e rodá-lo:
 
 ```bash
 $ chmod +x setup.sh
