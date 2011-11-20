@@ -34,11 +34,17 @@ Aqui armazeno todas as configurações de plugins, snippets e esquema de cores p
 
 ## Instalação Automática
 
-Basta somente dar permissão de execução no arquivo ``setup.py`` e rodá-lo:
+1. Faça o checkout do projeto:
+
+```bash
+$ git clone git@github.com:gilsondev/vimfiles.git ~/.vim
+```
+
+2. Dê permissão de execução no arquivo ``setup.sh`` e rodá-lo:
 
 ```bash
 $ chmod +x setup.sh
-$ ./setup.py
+$ ./setup.sh
 ```
 
 ## Instalação em Modo Manual
