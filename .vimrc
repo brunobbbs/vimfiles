@@ -17,7 +17,8 @@ if has("gui_running")
 	colorscheme underwater-mod
 	" colorscheme railscasts
 
-	set guifont=Monaco\ 10
+	" set guifont=Monaco\ 9
+	set guifont=Ubuntu\ Mono\ Bold\ 10
 
 endif
 " }
@@ -41,10 +42,11 @@ set sessionoptions+=winpos " What should be saved during sessions being saved
 " Vim UI {
 set popt+=syntax:y " Syntax when printing
 set showcmd " show the command being typed
+set showmode " show command mode
 set guioptions=aer "adding others
 
 if has("gui_running")
-	set lines=41 columns=155 "Size
+	set lines=50 columns=192 "Size
 endif
 
 set linespace=0 " space it out a little more (easier to read)
@@ -63,7 +65,7 @@ set whichwrap+=<,>,[,],h,l  " backspace and cursor keys wrap to
 "set shortmess=atI " shortens messages to avoid 'press a key' prompt
 set report=0 " tell us when anything is changed via :...
 set noerrorbells " don't make noise
-
+set ttyfast
 
 "
 " set list listchars=tab:\ \ ,trail:·,eol:¬ " mark trailing white space
@@ -76,7 +78,7 @@ set matchtime=5 " how many tenths of a second to blink matching brackets for
 set hlsearch
 set incsearch " BUT do highlight as you type you search phrase
 set scrolloff=3 " Keep 5 lines (top/bottom) for scope
-set sidescrolloff=5 " Keep 5 lines at the size
+set sidescrolloff=3 " Keep 5 lines at the size
 "set novisualbell " don't blink
 set vb " blink instead beep
 set statusline=%f%m%r%h%w\ [TYPE=%Y]\ [ENCODE=%{&fenc}]\ [POS=%04l,%04v][%p%%]\ [LEN=%L]
@@ -96,7 +98,7 @@ set copyindent " but above all -- follow the conventions laid before us
 " }
 
 " Text Formatting/Layout {
-"set formatoptions=tcrq " See Help (complex)
+set formatoptions=tcrq " See Help (complex)
 set shiftround " when at 3 spaces, and I hit > ... go to 4, not 5
 set nowrap " do not wrap line
 set preserveindent " but above all -- follow the conventions laid before us
