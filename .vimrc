@@ -93,7 +93,9 @@ set cindent " do c-style indenting
 set softtabstop=4 " unify
 set shiftwidth=4 " unify
 set tabstop=4 " real tabs should be 4, but they will show with set list on
+set expandtab
 set copyindent " but above all -- follow the conventions laid before us
+
 
 " }
 
@@ -123,6 +125,15 @@ set nofoldenable        "dont fold by default
 set foldlevel=1         "this is just what i use
 " }
 
+
+" Indent Guides {
+let g:indent_guides_start_level=2
+let g:indent_guides_indent_levels=20
+let g:indent_guides_color_change_percent=5
+let g:indent_guides_guide_size=1
+let g:indent_guides_space_guides=1
+let g:indent_guides_enable_on_vim_startup = 1
+" }
 
 " Mappings {
 
