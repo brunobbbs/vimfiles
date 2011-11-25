@@ -82,3 +82,9 @@
 [submodule "bundle/vim-indent-guides"]
 	path = bundle/vim-indent-guides
 	url = git://github.com/nathanaelkane/vim-indent-guides.git
+[submodule "bundle/svn-git"]
+	path = bundle/svn-git
+	url = git://github.com/scyn-conf/svn-vim.git
+[submodule "bundle/VimIRC"]
+	path = bundle/VimIRC
+	url = git://github.com/vim-scripts/VimIRC.vim.git
