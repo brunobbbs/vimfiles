@@ -88,3 +88,6 @@
 [submodule "bundle/VimIRC"]
 	path = bundle/VimIRC
 	url = git://github.com/vim-scripts/VimIRC.vim.git
+[submodule "bundle/tabbar"]
+	path = bundle/tabbar
+	url = git://github.com/vim-scripts/TabBar.git
