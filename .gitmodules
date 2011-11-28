@@ -88,3 +88,6 @@
 [submodule "bundle/VimIRC"]
 	path = bundle/VimIRC
 	url = git://github.com/vim-scripts/VimIRC.vim.git
+[submodule "bundle/django_colorschemes.vim"]
+	path = bundle/django_colorschemes.vim
+	url = git://github.com/gilsondev/django_colorschemes.vim.git

@@ -1,7 +1,7 @@
 " Basics {
 set nocompatible " get out of horrible vi-compatible mode
-"set background=dark " we are using a dark background
-set background=light " we are using a light background
+set background=dark " we are using a dark background
+" set background=light " we are using a light background
 
 " Configuring Pathogen {
 call pathogen#runtime_append_all_bundles()
@@ -14,11 +14,12 @@ filetype plugin indent on " load filetype plugins and indent settings
 if has("gui_running")
 	" colorscheme wombat-original
 	" colorscheme solarized
-	colorscheme underwater-mod
+	" colorscheme underwater-mod
 	" colorscheme railscasts
+	colorscheme django_smoothy
 
-	" set guifont=Monaco\ 9
-	set guifont=Ubuntu\ Mono\ Bold\ 10
+	set guifont=Monaco\ 10
+	" set guifont=Ubuntu\ Mono\ Bold\ 10
 
 endif
 " }
