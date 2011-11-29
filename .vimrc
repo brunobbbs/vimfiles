@@ -44,7 +44,7 @@ set sessionoptions+=winpos " What should be saved during sessions being saved
 set popt+=syntax:y " Syntax when printing
 set showcmd " show the command being typed
 set showmode " show command mode
-set guioptions=aer "adding others
+set guioptions=ae "adding others
 
 if has("gui_running")
 	set lines=50 columns=192 "Size
@@ -165,10 +165,9 @@ noremap <C-C> :y <CR>
 noremap <C-B> :NERDTreeToggle<CR>
 " }
 
-" Shortcuts Fuzzy Finder {
-" noremap <C-P> :FufFile<CR>
-" noremap <C-M-P> :FufBookmarkDir<CR>
-" noremap <C-M-A> :FufBookmarkDirAdd<CR>
+" Shortcuts Buffers {
+map <A-Left> :bnext <CR>
+map <A-Right> :bprevious <CR>
 " }
 
 " Shortcuts Lusty {
