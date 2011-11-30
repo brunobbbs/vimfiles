@@ -24,12 +24,14 @@ Aqui armazeno todas as configurações de plugins, snippets e esquema de cores p
 20. TComment: https://github.com/tomtom/tcomment_vim
 21. Vim LaTeX: https://github.com/jcf/vim-latex
 22. Vim Virtualenv: https://github.com/jmcantrell/vim-virtualenv
+23. Pydoc: https://github.com/fs111/pydoc.vim
 
 #### Esquema de Cores
 1. Github Theme: https://github.com/nono/github_vim_theme
 2. Railscasts Theme: https://github.com/jpo/vim-railscasts-theme
 3. Underwater: https://github.com/vim-scripts/underwater-mod (recomendado)
 4. Solarized: https://github.com/altercation/vim-colors-solarized (recomendado)
+5. Django Smoothy: https://github.com/gilsondev/django_colorschemes.vim
 
 
 ## Instalação Automática
