@@ -14,14 +14,16 @@ filetype plugin indent on " load filetype plugins and indent settings
 
 if has("gui_running")
 	" colorscheme wombat-original
-	" colorscheme solarized
+	colorscheme solarized
 	" colorscheme underwater-mod
 	" colorscheme railscasts
-	colorscheme django_smoothy
+	" colorscheme django_smoothy
 
 	set guifont=Monaco\ 10
 	" set guifont=Ubuntu\ Mono\ Bold\ 10
 
+else
+    let g:solarized_termcolors=256
 endif
 " }
 
@@ -127,7 +129,6 @@ set nofoldenable        "dont fold by default
 set foldlevel=1         "this is just what i use
 " }
 
-
 " Indent Guides {
 let g:indent_guides_start_level=2
 let g:indent_guides_indent_levels=20
@@ -160,6 +161,11 @@ noremap <C-S> :w<CR>
 inoremap <C-S> <ESC>:w<CR><Insert>
 noremap <C-X> :x<CR>
 noremap <C-C> :y <CR>
+" }
+
+" Switch background types {
+noremap <leader>l :set background=light<CR>
+noremap <leader>d :set background=dark<CR>
 " }
 
 " Shortcuts NERDTree {
