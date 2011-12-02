@@ -9,6 +9,7 @@ call pathogen#runtime_append_all_bundles()
 
 call pathogen#helptags()
 syntax on " syntax highlighting on
+filetype on
 filetype plugin indent on " load filetype plugins and indent settings
 
 if has("gui_running")
@@ -82,7 +83,7 @@ set scrolloff=3 " Keep 5 lines (top/bottom) for scope
 set sidescrolloff=3 " Keep 5 lines at the size
 "set novisualbell " don't blink
 set vb " blink instead beep
-set statusline=%f%m%r%h%w\ [TYPE=%Y]\ [ENCODE=%{&fenc}]\ [POS=%04l,%04v][%p%%]\ [LEN=%L]
+set statusline=%f%m%r%h%w\ [TYPE=%Y]\ [ENCODE=%{&fenc}]\ [POS=%04l,%04v][%p%%]\ %{fugitive#statusline()}\ [LEN=%L]
 " set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [ENCODE=%{&fenc}]\ [POS=%04l,%04v][%p%%]\ [LEN=%L]
 set laststatus=2 " always show the status line
 " }
@@ -259,6 +260,9 @@ EOF
     	let python_highlight_space_errors = 1
     	let python_highlight_doctests = 1
 
+    	"PEP8 Checker
+    noremap <C-S> :!pep8 %<CR>
+
 		" complain to PEP 8 (Style Guide for Python Code) : http://www.python.org/dev/peps/pep-0008/
 		" I added here too in case of make some shit in middle code :D
 		set ai tw=79 ts=4 sts=4 sw=4 et
@@ -272,6 +276,9 @@ if !exists("myautocmds")
 
 	" Sparkup
 	let g:sparkupExecuteMapping = '<c-d>'
+
+    " Pyflakes
+    let g:pyflakes_use_quickfix = 0
 
 	"call LoadPythonGoodies()
 	"autocmd Filetype python,html,xhtml call LoadPythonGoodies()
