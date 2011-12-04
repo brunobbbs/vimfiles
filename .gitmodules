@@ -1,9 +1,6 @@
 [submodule "bundle/fugitive"]
 	path = bundle/fugitive
 	url = http://github.com/tpope/vim-fugitive.git
-[submodule "bundle/notes"]
-	path = bundle/notes
-	url = git://github.com/vim-scripts/notes.vim.git
 [submodule "bundle/NERD_Tree"]
 	path = bundle/NERD_Tree
 	url = git://github.com/vim-scripts/The-NERD-tree.git
@@ -61,9 +58,6 @@
 [submodule "bundle/lusty"]
 	path = bundle/lusty
 	url = git://github.com/sjbach/lusty.git
-[submodule "bundle/tcomment"]
-	path = bundle/tcomment
-	url = git://github.com/tomtom/tcomment_vim.git
 [submodule "bundle/vim-mercurial"]
 	path = bundle/vim-mercurial
 	url = git://github.com/DasIch/vim-mercurial.git
@@ -94,3 +88,6 @@
 [submodule "bundle/pep8"]
 	path = bundle/pep8
 	url = git://github.com/vim-scripts/pep8.git
+[submodule "bundle/tabbar"]
+	path = bundle/tabbar
+	url = git://github.com/vim-scripts/TabBar.git
