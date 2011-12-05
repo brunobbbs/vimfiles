@@ -1,7 +1,7 @@
 " Basics {
 set nocompatible " get out of horrible vi-compatible mode
-set background=dark " we are using a dark background
-" set background=light " we are using a light background
+" set background=dark " we are using a dark background
+set background=light " we are using a light background
 
 " Configuring Pathogen {
 call pathogen#runtime_append_all_bundles()
@@ -73,8 +73,8 @@ set noerrorbells " don't make noise
 set ttyfast
 
 "
-" set list listchars=tab:\ \ ,trail:·,eol:¬ " mark trailing white space
-set list listchars=tab:\ \ ,trail:· " mark trailing white space
+set list listchars=tab:\ \ ,trail:·,eol:¬ " mark trailing white space
+" set list listchars=tab:\ \ ,trail:· " mark trailing white space
 " }
 
 " Visual Cues {
@@ -145,14 +145,17 @@ inoremap <F8> <ESC>mzgg=G`z<Insert>
 
 " Tab navigation
 
-noremap <C-M-N> :tabnew <CR>
-inoremap <C-M-N> :tabnew <CR><Insert>
+noremap <C-T> :tabnew <CR>
+inoremap <C-T> :tabnew <CR><Insert>
 
-noremap <C-Right> :tabn<CR>
-inoremap <C-Right> <esc>:tabn<CR><Insert>
+noremap <S-Right> :tabn<CR>
+inoremap <S-Right> <esc>:tabn<CR><Insert>
 
-noremap <C-Left> :tabprev<CR>
-inoremap <C-Left> <ESC>tabprev<CR><Insert>
+noremap <S-Left> :tabprev<CR>
+inoremap <S-Left> <ESC>tabprev<CR><Insert>
+
+noremap <C-W> :tabclose<CR>
+inoremap <C-W> :tabclose<CR><Insert>
 " }
 
 " Shortcut Save (default in others editors) {
