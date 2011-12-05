@@ -47,7 +47,8 @@ set sessionoptions+=winpos " What should be saved during sessions being saved
 set popt+=syntax:y " Syntax when printing
 set showcmd " show the command being typed
 set showmode " show command mode
-set guioptions=ae "adding others
+set guioptions=aeL "adding others
+" set guioptions=aegirLt
 
 if has("gui_running")
 	set lines=50 columns=192 "Size
@@ -115,18 +116,16 @@ set nocursorcolumn " show the current column
 " }
 
 " Folding {
-" set foldenable			" Turn on folding
+set foldenable			" Turn on folding
 " set foldmarker={,}		" Fold C style code (only use this as default if you use a high foldlevel)
-" set foldcolumn=4		" Give 1 column for fold markers
-" set foldopen-=search	" don't open folds when you search into them
-" set foldopen-=undo		" don't open folds when you undo stuff
-" set foldmethod=marker " Fold on the marker
-" set foldlevel=1000 " Don't autofold anything (but I can still fold manually)
+" set foldcolumn=2		" Give 1 column for fold markers
+set foldopen-=search	" don't open folds when you search into them
+set foldopen-=undo		" don't open folds when you undo stuff
+set foldmethod=marker " Fold on the marker
+set foldlevel=1000 " Don't autofold anything (but I can still fold manually)
 
-set foldmethod=indent   "fold based on indent
-set foldnestmax=10      "deepest fold is 10 levels
-set nofoldenable        "dont fold by default
-set foldlevel=1         "this is just what i use
+:highlight Folded guibg=grey guifg=blue         " Customize color folded
+:highlight FoldColumn guibg=darkgrey guifg=white" Customize fold column
 " }
 
 " Indent Guides {
@@ -179,6 +178,7 @@ map <A-Right> :bprevious <CR>
 
 " Shortcuts Lusty {
 noremap <C-P> :LustyFilesystemExplorerFromHere<CR>
+noremap <C-M-P> :LustyBufferExplorer<CR>
 " }
 
 " Shortcuts Fontzoom {
