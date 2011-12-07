@@ -91,3 +91,6 @@
 [submodule "bundle/vim-railscasts-theme"]
 	path = bundle/vim-railscasts-theme
 	url = git://github.com/jpo/vim-railscasts-theme.git
+[submodule "bundle/color-sample-pack"]
+	path = bundle/color-sample-pack
+	url = git://github.com/vim-scripts/Color-Sampler-Pack.git
