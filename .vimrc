@@ -19,8 +19,8 @@ if has("gui_running")
 	" colorscheme railscasts
 	" colorscheme django_smoothy
 
-	set guifont=Monaco\ 10
-	" set guifont=Ubuntu\ Mono\ Bold\ 10
+	" set guifont=Monaco\ 10
+	set guifont=Ubuntu\ Mono\ Bold\ 11
 
 else
     let g:solarized_termcolors=256
@@ -51,7 +51,7 @@ set guioptions=aeL "adding others
 " set guioptions=aegirLt
 
 if has("gui_running")
-	set lines=50 columns=192 "Size
+	set lines=42 columns=145 "Size
 endif
 
 set linespace=0 " space it out a little more (easier to read)
@@ -154,8 +154,6 @@ inoremap <S-Right> <esc>:tabn<CR><Insert>
 noremap <S-Left> :tabprev<CR>
 inoremap <S-Left> <ESC>tabprev<CR><Insert>
 
-noremap <C-W> :tabclose<CR>
-inoremap <C-W> :tabclose<CR><Insert>
 " }
 
 " Shortcut Save (default in others editors) {
