@@ -1,7 +1,7 @@
 " Basics {
 set nocompatible " get out of horrible vi-compatible mode
-" set background=dark " we are using a dark background
-set background=light " we are using a light background
+set background=dark " we are using a dark background
+" set background=light " we are using a light background
 
 " Configuring Pathogen {
 call pathogen#runtime_append_all_bundles()
@@ -14,13 +14,14 @@ filetype plugin indent on " load filetype plugins and indent settings
 
 if has("gui_running")
 	" colorscheme wombat-original
-	colorscheme solarized
+	" colorscheme solarized
 	" colorscheme underwater-mod
-	" colorscheme railscasts
+	colorscheme railscasts
 	" colorscheme django_smoothy
 
 	" set guifont=Monaco\ 10
-	set guifont=Ubuntu\ Mono\ Bold\ 11
+	" set guifont=Ubuntu\ Mono\ Bold\ 12
+	set guifont=Ubuntu\ Mono\ 12
 
 else
     let g:solarized_termcolors=256
@@ -51,7 +52,7 @@ set guioptions=aeL "adding others
 " set guioptions=aegirLt
 
 if has("gui_running")
-	set lines=42 columns=145 "Size
+	set lines=35 columns=155 "Size
 endif
 
 set linespace=0 " space it out a little more (easier to read)
@@ -73,8 +74,8 @@ set noerrorbells " don't make noise
 set ttyfast
 
 "
-set list listchars=tab:\ \ ,trail:·,eol:¬ " mark trailing white space
-" set list listchars=tab:\ \ ,trail:· " mark trailing white space
+" set list listchars=tab:\ \ ,trail:·,eol:¬ " mark trailing white space
+set list listchars=tab:\ \ ,trail:· " mark trailing white space
 " }
 
 " Visual Cues {
@@ -86,7 +87,7 @@ set scrolloff=3 " Keep 5 lines (top/bottom) for scope
 set sidescrolloff=3 " Keep 5 lines at the size
 "set novisualbell " don't blink
 set vb " blink instead beep
-set statusline=%f%m%r%h%w\ [TYPE=%Y]\ [ENCODE=%{&fenc}]\ [POS=%04l,%04v][%p%%]\ %{fugitive#statusline()}\ [LEN=%L]
+set statusline=%f%m%r%h%w\ [TYPE=%Y]\ [ENCODE=%{&fenc}]\ [POS=%04l,%04v][%p%%]\ [LEN=%L]\ \ \ \ \ \ \ \ \ \ \ \ \ \ %{fugitive#statusline()}
 " set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [ENCODE=%{&fenc}]\ [POS=%04l,%04v][%p%%]\ [LEN=%L]
 set laststatus=2 " always show the status line
 " }
@@ -145,8 +146,8 @@ inoremap <F8> <ESC>mzgg=G`z<Insert>
 
 " Tab navigation
 
-noremap <C-T> :tabnew <CR>
-inoremap <C-T> :tabnew <CR><Insert>
+noremap <C-S-N> :tabnew <CR>
+inoremap <C-S-N> :tabnew <CR><Insert>
 
 noremap <S-Right> :tabn<CR>
 inoremap <S-Right> <esc>:tabn<CR><Insert>
@@ -163,7 +164,7 @@ noremap <C-X> :x<CR>
 noremap <C-C> :y <CR>
 " }
 
-" Switch background types {
+" Switch background modes {
 noremap <leader>l :set background=light<CR>
 noremap <leader>d :set background=dark<CR>
 " }
