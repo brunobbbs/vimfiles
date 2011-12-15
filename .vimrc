@@ -19,9 +19,9 @@ if has("gui_running")
 	colorscheme railscasts
 	" colorscheme django_smoothy
 
-	" set guifont=Monaco\ 10
+	set guifont=Monaco\ 10
 	" set guifont=Ubuntu\ Mono\ Bold\ 12
-	set guifont=Ubuntu\ Mono\ 12
+	" set guifont=Ubuntu\ Mono\ 11
 
 else
     let g:solarized_termcolors=256
@@ -48,11 +48,11 @@ set sessionoptions+=winpos " What should be saved during sessions being saved
 set popt+=syntax:y " Syntax when printing
 set showcmd " show the command being typed
 set showmode " show command mode
-set guioptions=aeL "adding others
+set guioptions=ae "adding others
 " set guioptions=aegirLt
 
 if has("gui_running")
-	set lines=35 columns=155 "Size
+	set lines=35 columns=148 "Size
 endif
 
 set linespace=0 " space it out a little more (easier to read)
@@ -136,6 +136,14 @@ let g:indent_guides_color_change_percent=5
 let g:indent_guides_guide_size=1
 let g:indent_guides_space_guides=1
 let g:indent_guides_enable_on_vim_startup = 1
+" }
+
+" Gist {
+let g:gist_clip_command = 'xclip -selection clipboard'  " copy the gist code
+let g:gist_detect_filetype = 1                          " detect filetype from filename
+let g:gist_open_browser_after_post = 1                  " open browser after the post
+let g:gist_browser_command = 'google-chrome %URL% &'            " change the browser
+
 " }
 
 " Mappings {

@@ -97,3 +97,6 @@
 [submodule "bundle/vim-railscasts-theme"]
 	path = bundle/vim-railscasts-theme
 	url = git://github.com/gilsondev/vim-railscasts-theme.git
+[submodule "bundle/gist"]
+	path = bundle/gist
+	url = git://github.com/vim-scripts/Gist.vim.git
