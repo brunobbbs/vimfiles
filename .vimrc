@@ -143,7 +143,8 @@ let g:gist_clip_command = 'xclip -selection clipboard'  " copy the gist code
 let g:gist_detect_filetype = 1                          " detect filetype from filename
 let g:gist_open_browser_after_post = 1                  " open browser after the post
 let g:gist_browser_command = 'google-chrome %URL% &'            " change the browser
-
+let g:github_user = 'gilsondev'
+let g:github_token = 'e7c4bdfe9e633b657ce90d227279db4e'
 " }
 
 " Mappings {
