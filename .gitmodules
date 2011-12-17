@@ -100,3 +100,6 @@
 [submodule "bundle/gist"]
 	path = bundle/gist
 	url = git://github.com/vim-scripts/Gist.vim.git
+[submodule "bundle/vim-blog"]
+	path = bundle/vim-blog
+	url = git://github.com/vim-scripts/Vim-Blog.git
