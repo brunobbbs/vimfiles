@@ -1,30 +1,22 @@
 " Basics {
 set nocompatible " get out of horrible vi-compatible mode
 set background=dark " we are using a dark background
-" set background=light " we are using a light background
 
 " Configuring Pathogen {
 call pathogen#runtime_append_all_bundles()
+call pathogen#helptags()
 " }
 
-call pathogen#helptags()
 syntax on " syntax highlighting on
 filetype on
 filetype plugin indent on " load filetype plugins and indent settings
 
 if has("gui_running")
-	" colorscheme wombat-original
-	" colorscheme solarized
-	" colorscheme underwater-mod
 	colorscheme railscasts
-	" colorscheme django_smoothy
-
 	set guifont=Monaco\ 10
-	" set guifont=Ubuntu\ Mono\ Bold\ 12
-	" set guifont=Ubuntu\ Mono\ 11
 
-else
-    let g:solarized_termcolors=256
+    set guioptions=aem "adding otherelse
+    set showtabline=2
 endif
 " }
 
@@ -48,11 +40,9 @@ set sessionoptions+=winpos " What should be saved during sessions being saved
 set popt+=syntax:y " Syntax when printing
 set showcmd " show the command being typed
 set showmode " show command mode
-set guioptions=ae "adding others
-" set guioptions=aegirLt
 
 if has("gui_running")
-	set lines=35 columns=148 "Size
+	set lines=45 columns=163 "Size
 endif
 
 set linespace=0 " space it out a little more (easier to read)
@@ -85,9 +75,8 @@ set hlsearch
 set incsearch " BUT do highlight as you type you search phrase
 set scrolloff=3 " Keep 5 lines (top/bottom) for scope
 set sidescrolloff=3 " Keep 5 lines at the size
-"set novisualbell " don't blink
 set vb " blink instead beep
-set statusline=%f%m%r%h%w\ [TYPE=%Y]\ [ENCODE=%{&fenc}]\ [POS=%04l,%04v][%p%%]\ [LEN=%L]\ [VIRTUALENV=%{VirtualEnvStatusline()}]\ \ \ \ \ \ \ \ \ \ \ \ \ %{fugitive#statusline()}
+set statusline=%f%m%r%h%w\ [TYPE=%Y]\ [ENCODE=%{&fenc}]\ [POS=%04l,%04v][%p%%]\ [LEN=%L]\ %{fugitive#statusline()}
 " set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [ENCODE=%{&fenc}]\ [POS=%04l,%04v][%p%%]\ [LEN=%L]
 set laststatus=2 " always show the status line
 " }
@@ -142,9 +131,13 @@ let g:indent_guides_enable_on_vim_startup = 1
 let g:gist_clip_command = 'xclip -selection clipboard'  " copy the gist code
 let g:gist_detect_filetype = 1                          " detect filetype from filename
 let g:gist_open_browser_after_post = 1                  " open browser after the post
-let g:gist_browser_command = 'google-chrome %URL% &'            " change the browser
+let g:gist_browser_command = 'google-chrome %URL% &'    " change the browser
 let g:github_user = 'gilsondev'
-let g:github_token = 'e7c4bdfe9e633b657ce90d227279db4e'
+let g:github_token = '<insert your token github account>'
+" }
+
+" Vim PEP8 {
+let g:pep8_args = "--show-source --ignore=E501" "View source and ignore type error E501
 " }
 
 " Mappings {
@@ -187,9 +180,9 @@ map <A-Left> :bnext <CR>
 map <A-Right> :bprevious <CR>
 " }
 
-" Shortcuts Lusty {
-noremap <C-P> :LustyFilesystemExplorerFromHere<CR>
-noremap <C-M-P> :LustyBufferExplorer<CR>
+" Shortcuts Fuzzy Finder {
+noremap <C-P> :FufFile<CR>
+noremap <C-M-P> :FufBuffer<CR>
 " }
 
 " Shortcuts Fontzoom {
@@ -197,6 +190,7 @@ nnoremap <silent> <Plug>(fontzoom-larger)
 \                 :<C-u>Fontzoom +<C-r>=v:count1<CR><CR>
 nnoremap <silent> <Plug>(fontzoom-smaller)
 \                 :<C-u>Fontzoom _<C-r>=v:count1<CR><CR>
+
 " }
 
 function LoadDjangoGoodies()
