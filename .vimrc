@@ -140,7 +140,7 @@ let g:pep8_args = "--show-source --ignore=E501" "View source and ignore type err
 " ============= Indent ============={
 noremap <F8> gg=G
 inoremap <F8> <ESC>mzgg=G`z<Insert>
-}
+" }
 
 " ============= Tab navigation ============={
 

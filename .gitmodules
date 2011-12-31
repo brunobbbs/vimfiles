@@ -97,3 +97,6 @@
 [submodule "bundle/vim-blog"]
 	path = bundle/vim-blog
 	url = git://github.com/vim-scripts/Vim-Blog.git
+[submodule "bundle/fuzzy-finder"]
+	path = bundle/fuzzy-finder
+	url = git://github.com/vim-scripts/FuzzyFinder.git
