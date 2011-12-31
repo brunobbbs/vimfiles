@@ -88,9 +88,6 @@
 [submodule "bundle/scrollcolors"]
 	path = bundle/scrollcolors
 	url = git://github.com/vim-scripts/ScrollColors.git
-[submodule "bundle/color-sample-pack"]
-	path = bundle/color-sample-pack
-	url = git://github.com/vim-scripts/Color-Sampler-Pack.git
 [submodule "bundle/matchtag"]
 	path = bundle/matchtag
 	url = git://github.com/vim-scripts/MatchTag.git
