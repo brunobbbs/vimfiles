@@ -1,6 +1,8 @@
 "source '~/.vim/ftplugin/py_jump.vim'
 "source '~/.vim/ftplugin/python_fold.vim'
 
+set ruler
+
 setlocal tabstop=4
 setlocal softtabstop=4
 setlocal shiftwidth=4
@@ -8,6 +10,10 @@ setlocal textwidth=80
 setlocal smarttab
 setlocal expandtab
 setlocal smartindent
+setlocal colorcolumn=110
+
+" Highlight bad whitespace and ruler
+highlight BadWhitespace ctermbg=red guibg=red
 
 
 " VIM filetype plugin
