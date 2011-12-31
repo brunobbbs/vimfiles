@@ -1,8 +1,8 @@
-" Basics {
+" ============= Basics ============={
 set nocompatible " get out of horrible vi-compatible mode
 set background=dark " we are using a dark background
 
-" Configuring Pathogen {
+" ============= Configuring Pathogen ============={
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 " }
@@ -20,7 +20,7 @@ if has("gui_running")
 endif
 " }
 
-" General {
+" ============= General ============={
 set history=1000 " How many lines of history to remember
 set clipboard+=unnamed " turns out I do like is sharing windows clipboard
 set fileformats=unix,dos,mac " support all three, in this order
@@ -29,14 +29,14 @@ set iskeyword+=_,$,@,%,# " none of these should be word dividers, so make them n
 set nostartofline " leave my cursor where it was
 " }
 
-" Files/Backups {
+" ============= Files/Backups ============={
 set sessionoptions+=globals " What should be saved during sessions being saved
 set sessionoptions+=localoptions " What should be saved during sessions being saved
 set sessionoptions+=resize " What should be saved during sessions being saved
 set sessionoptions+=winpos " What should be saved during sessions being saved
 " }
 
-" Vim UI {
+" ============= Vim UI ============={
 set popt+=syntax:y " Syntax when printing
 set showcmd " show the command being typed
 set showmode " show command mode
@@ -62,13 +62,10 @@ set whichwrap+=<,>,[,],h,l  " backspace and cursor keys wrap to
 set report=0 " tell us when anything is changed via :...
 set noerrorbells " don't make noise
 set ttyfast
-
-"
-" set list listchars=tab:\ \ ,trail:·,eol:¬ " mark trailing white space
 set list listchars=tab:\ \ ,trail:· " mark trailing white space
 " }
 
-" Visual Cues {
+" ============= Visual Cues ============={
 set showmatch " show matching brackets
 set matchtime=5 " how many tenths of a second to blink matching brackets for
 set hlsearch
@@ -81,7 +78,7 @@ set statusline=%f%m%r%h%w\ [TYPE=%Y]\ [ENCODE=%{&fenc}]\ [POS=%04l,%04v][%p%%]\ 
 set laststatus=2 " always show the status line
 " }
 
-" Indent Related {
+" ============= Indent Related ============={
 set nosmartindent " smartindent (filetype indenting instead)
 set autoindent " autoindent (should be overwrote by cindent or filetype indent)
 set cindent " do c-style indenting
@@ -90,11 +87,9 @@ set shiftwidth=4 " unify
 set tabstop=4 " real tabs should be 4, but they will show with set list on
 set expandtab
 set copyindent " but above all -- follow the conventions laid before us
-
-
 " }
 
-" Text Formatting/Layout {
+" ============= Text Formatting/Layout ============={
 set formatoptions=tcrq " See Help (complex)
 set shiftround " when at 3 spaces, and I hit > ... go to 4, not 5
 set nowrap " do not wrap line
@@ -105,7 +100,7 @@ set completeopt=menu,longest,preview " improve the way autocomplete works
 set nocursorcolumn " show the current column
 " }
 
-" Folding {
+" ============= Folding ============={
 set foldenable			" Turn on folding
 " set foldmarker={,}		" Fold C style code (only use this as default if you use a high foldlevel)
 " set foldcolumn=2		" Give 1 column for fold markers
@@ -118,7 +113,7 @@ set foldlevel=1000 " Don't autofold anything (but I can still fold manually)
 :highlight FoldColumn guibg=darkgrey guifg=white" Customize fold column
 " }
 
-" Indent Guides {
+" ============= Indent Guides ============={
 let g:indent_guides_start_level=2
 let g:indent_guides_indent_levels=20
 let g:indent_guides_color_change_percent=5
@@ -127,7 +122,7 @@ let g:indent_guides_space_guides=1
 let g:indent_guides_enable_on_vim_startup = 1
 " }
 
-" Gist {
+" ============= Gist ============={
 let g:gist_clip_command = 'xclip -selection clipboard'  " copy the gist code
 let g:gist_detect_filetype = 1                          " detect filetype from filename
 let g:gist_open_browser_after_post = 1                  " open browser after the post
@@ -136,17 +131,18 @@ let g:github_user = 'gilsondev'
 let g:github_token = '<insert your token github account>'
 " }
 
-" Vim PEP8 {
+" ============= Vim PEP8 ============={
 let g:pep8_args = "--show-source --ignore=E501" "View source and ignore type error E501
 " }
 
-" Mappings {
+" ============= Mappings =========== {
 
-" Indent
+" ============= Indent ============={
 noremap <F8> gg=G
 inoremap <F8> <ESC>mzgg=G`z<Insert>
+}
 
-" Tab navigation
+" ============= Tab navigation ============={
 
 noremap <C-S-N> :tabnew <CR>
 inoremap <C-S-N> :tabnew <CR><Insert>
@@ -159,33 +155,33 @@ inoremap <S-Left> <ESC>tabprev<CR><Insert>
 
 " }
 
-" Shortcut Save (default in others editors) {
+" ============= Shortcut Save (default in others editors) ============={
 noremap <C-S> :w<CR>
 inoremap <C-S> <ESC>:w<CR><Insert>
 noremap <C-X> :x<CR>
 noremap <C-C> :y <CR>
 " }
 
-" Switch background modes {
+" ============= Switch background modes ============={
 noremap <leader>l :set background=light<CR>
 noremap <leader>d :set background=dark<CR>
 " }
 
-" Shortcuts NERDTree {
+" ============= Shortcuts NERDTree ============={
 noremap <C-B> :NERDTreeToggle<CR>
 " }
 
-" Shortcuts Buffers {
+" ============= Shortcuts Buffers ============={
 map <A-Left> :bnext <CR>
 map <A-Right> :bprevious <CR>
 " }
 
-" Shortcuts Fuzzy Finder {
+" ============= Shortcuts Fuzzy Finder ============={
 noremap <C-P> :FufFile<CR>
 noremap <C-M-P> :FufBuffer<CR>
 " }
 
-" Shortcuts Fontzoom {
+" ============= Shortcuts Fontzoom ============={
 nnoremap <silent> <Plug>(fontzoom-larger)
 \                 :<C-u>Fontzoom +<C-r>=v:count1<CR><CR>
 nnoremap <silent> <Plug>(fontzoom-smaller)
@@ -230,7 +226,7 @@ function LoadDjangoGoodies()
 endfunction
 
 
-" Python customization {
+" ============= Python customization ============={
 function LoadPythonGoodies()
 
 	if &ft=="python"||&ft=="html"||&ft=="xhtml"
