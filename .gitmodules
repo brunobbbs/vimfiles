@@ -52,9 +52,6 @@
 [submodule "bundle/sparkup"]
 	path = bundle/sparkup
 	url = git://github.com/kogakure/vim-sparkup.git
-[submodule "bundle/lusty"]
-	path = bundle/lusty
-	url = git://github.com/sjbach/lusty.git
 [submodule "bundle/vim-mercurial"]
 	path = bundle/vim-mercurial
 	url = git://github.com/DasIch/vim-mercurial.git
