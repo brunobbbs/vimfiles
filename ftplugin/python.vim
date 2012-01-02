@@ -10,7 +10,7 @@ setlocal textwidth=80
 setlocal smarttab
 setlocal expandtab
 setlocal smartindent
-setlocal colorcolumn=110
+setlocal colorcolumn=80
 
 " Highlight bad whitespace and ruler
 highlight BadWhitespace ctermbg=red guibg=red
