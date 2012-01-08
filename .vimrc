@@ -13,9 +13,8 @@ filetype plugin indent on " load filetype plugins and indent settings
 
 if has("gui_running")
 	colorscheme railscasts
-	set guifont=Monaco\ 10
-
-    set guioptions=aem "adding otherelse
+	set guifont=Ubuntu\ Mono\ 12
+	set guioptions=aem "adding otherelse
     set showtabline=2
 endif
 " }
@@ -133,6 +132,7 @@ let g:github_token = '<insert your token github account>'
 
 " ============= Vim PEP8 ============={
 let g:pep8_args = "--show-source --ignore=E501" "View source and ignore type error E501
+autocmd FileType python map <buffer> <F5> :call Pep8()<CR>
 " }
 
 " ============= Mappings =========== {
