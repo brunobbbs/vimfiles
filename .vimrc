@@ -41,7 +41,7 @@ set showcmd " show the command being typed
 set showmode " show command mode
 
 if has("gui_running")
-	set lines=45 columns=163 "Size
+	set lines=35 columns=163 "Size
 endif
 
 set linespace=0 " space it out a little more (easier to read)
