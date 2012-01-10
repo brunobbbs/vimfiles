@@ -106,3 +106,6 @@
 [submodule "bundle/vim-tomorrow-theme"]
 	path = bundle/vim-tomorrow-theme
 	url = git://github.com/ChrisKempson/Vim-Tomorrow-Theme.git
+[submodule "bundle/vim-colorschemes"]
+	path = bundle/vim-colorschemes
+	url = git://github.com/gilsondev/vim-colorschemes.git
