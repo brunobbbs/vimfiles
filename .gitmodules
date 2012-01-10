@@ -4,9 +4,6 @@
 [submodule "bundle/NERD_Tree"]
 	path = bundle/NERD_Tree
 	url = git://github.com/vim-scripts/The-NERD-tree.git
-[submodule "bundle/FuzzyFinder"]
-	path = bundle/FuzzyFinder
-	url = git://github.com/vim-scripts/FuzzyFinder.git
 [submodule "bundle/surround"]
 	path = bundle/surround
 	url = git://github.com/tpope/vim-surround.git
@@ -97,9 +94,6 @@
 [submodule "bundle/fuzzy-finder"]
 	path = bundle/fuzzy-finder
 	url = git://github.com/vim-scripts/FuzzyFinder.git
-[submodule "bundle/L9"]
-	path = bundle/L9
-	url = git://github.com/vim-scripts/L9.git
 [submodule "bundle/vim-pep8"]
 	path = bundle/vim-pep8
 	url = git://github.com/nvie/vim-pep8.git
