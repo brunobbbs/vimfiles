@@ -181,6 +181,15 @@ noremap <C-P> :FufFile<CR>
 noremap <C-M-P> :FufBuffer<CR>
 " }
 
+" ============= Shortcuts Complete parenthesis, etc ============={
+imap ( ()<ESC><Insert>
+inoremap ( ()<ESC><Insert>
+inoremap { {<Char-13>}<ESC><Insert>
+inoremap [ []<ESC><Insert>
+inoremap " ""<ESC><Insert>
+inoremap ' ''<ESC><Insert>
+" }
+
 " ============= Shortcuts Fontzoom ============={
 nnoremap <silent> <Plug>(fontzoom-larger)
 \                 :<C-u>Fontzoom +<C-r>=v:count1<CR><CR>
