@@ -177,8 +177,8 @@ map <A-Right> :bprevious <CR>
 " }
 
 " ============= Shortcuts Fuzzy Finder ============={
-noremap <C-P> :FufFile<CR>
-noremap <C-M-P> :FufBuffer<CR>
+"noremap <C-P> :FufFile<CR>
+"noremap <C-M-P> :FufBuffer<CR>
 " }
 
 " ============= Shortcuts Fontzoom ============={
