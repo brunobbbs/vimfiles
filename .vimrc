@@ -1,201 +1,204 @@
 " ============= Basics ============={
-set nocompatible " get out of horrible vi-compatible mode
-set background=dark " we are using a dark background
+    set nocompatible " get out of horrible vi-compatible mode
+    set background=dark " we are using a dark background
 
-" ============= Configuring Pathogen ============={
-call pathogen#runtime_append_all_bundles()
-call pathogen#helptags()
-" }
+    " ============= Configuring Pathogen ============={
+    call pathogen#runtime_append_all_bundles()
+    call pathogen#helptags()
+    " }
 
-syntax on " syntax highlighting on
-filetype on
-filetype plugin indent on " load filetype plugins and indent settings
+    syntax on " syntax highlighting on
+    filetype on
+    filetype plugin indent on " load filetype plugins and indent settings
 
-if has("gui_running")
-	colorscheme railscasts
-	set guifont=Ubuntu\ Mono\ 12
-	set guioptions=aem "adding otherelse
-    set showtabline=2
-endif
+    if has("gui_running")
+	    colorscheme railscasts
+	    set guifont=Ubuntu\ Mono\ 12
+	    set guioptions=aem "adding otherelse
+        set showtabline=2
+    endif
 " }
 
 " ============= General ============={
-set history=1000 " How many lines of history to remember
-set clipboard+=unnamed " turns out I do like is sharing windows clipboard
-set fileformats=unix,dos,mac " support all three, in this order
-set viminfo+=! " make sure it can save viminfo
-set iskeyword+=_,$,@,%,# " none of these should be word dividers, so make them not be
-set nostartofline " leave my cursor where it was
+    set history=1000 " How many lines of history to remember
+    set clipboard+=unnamed " turns out I do like is sharing windows clipboard
+    set fileformats=unix,dos,mac " support all three, in this order
+    set viminfo+=! " make sure it can save viminfo
+    set iskeyword+=_,$,@,%,# " none of these should be word dividers, so make them not be
+    set nostartofline " leave my cursor where it was
 " }
 
 " ============= Files/Backups ============={
-set sessionoptions+=globals " What should be saved during sessions being saved
-set sessionoptions+=localoptions " What should be saved during sessions being saved
-set sessionoptions+=resize " What should be saved during sessions being saved
-set sessionoptions+=winpos " What should be saved during sessions being saved
+    set sessionoptions+=globals " What should be saved during sessions being saved
+    set sessionoptions+=localoptions " What should be saved during sessions being saved
+    set sessionoptions+=resize " What should be saved during sessions being saved
+    set sessionoptions+=winpos " What should be saved during sessions being saved
 " }
 
 " ============= Vim UI ============={
-set popt+=syntax:y " Syntax when printing
-set showcmd " show the command being typed
-set showmode " show command mode
+    set popt+=syntax:y " Syntax when printing
+    set showcmd " show the command being typed
+    set showmode " show command mode
 
-if has("gui_running")
-	set lines=35 columns=163 "Size
-endif
+    if has("gui_running")
+	    set lines=35 columns=163 "Size
+    endif
 
-set linespace=0 " space it out a little more (easier to read)
-set wildmenu " turn on wild menu
-set wildmode=list:longest " turn on wild menu in special format (long format)
-set wildignore=*.pyc,*.pyo,*.dll,*.o,*.obj,*.bak,*.exe,*.swo,*.swp,*.jpg,*.gif,*.png " ignore some formats
-set ruler " Always show current positions along the bottom
-set cmdheight=1 " the command bar is 1 high
-set number " turn on line numbers
-set numberwidth=4 " If we have over 9999 lines, ohh, boo-hoo
-set lazyredraw " do not redraw while running macros (much faster) (LazyRedraw)
-set hidden " you can change buffer without saving
-set backspace=2 " make backspace work normal
-set whichwrap+=<,>,[,],h,l  " backspace and cursor keys wrap to
-"set mouse=a " use mouse everywhere
-"set shortmess=atI " shortens messages to avoid 'press a key' prompt
-set report=0 " tell us when anything is changed via :...
-set noerrorbells " don't make noise
-set ttyfast
-set list listchars=tab:\ \ ,trail:· " mark trailing white space
+    set linespace=0 " space it out a little more (easier to read)
+    set wildmenu " turn on wild menu
+    set wildmode=list:longest " turn on wild menu in special format (long format)
+    set wildignore=*.pyc,*.pyo,*.dll,*.o,*.obj,*.bak,*.exe,*.swo,*.swp,*.jpg,*.gif,*.png " ignore some formats
+    set ruler " Always show current positions along the bottom
+    set cmdheight=1 " the command bar is 1 high
+    set number " turn on line numbers
+    set numberwidth=4 " If we have over 9999 lines, ohh, boo-hoo
+    set lazyredraw " do not redraw while running macros (much faster) (LazyRedraw)
+    set hidden " you can change buffer without saving
+    set backspace=2 " make backspace work normal
+    set whichwrap+=<,>,[,],h,l  " backspace and cursor keys wrap to
+    "set mouse=a " use mouse everywhere
+    "set shortmess=atI " shortens messages to avoid 'press a key' prompt
+    set report=0 " tell us when anything is changed via :...
+    set noerrorbells " don't make noise
+    set ttyfast
+    set list listchars=tab:\ \ ,trail:· " mark trailing white space
 " }
 
 " ============= Visual Cues ============={
-set showmatch " show matching brackets
-set matchtime=5 " how many tenths of a second to blink matching brackets for
-set hlsearch
-set incsearch " BUT do highlight as you type you search phrase
-set scrolloff=3 " Keep 5 lines (top/bottom) for scope
-set sidescrolloff=3 " Keep 5 lines at the size
-set vb " blink instead beep
-set statusline=%f%m%r%h%w\ [TYPE=%Y]\ [ENCODE=%{&fenc}]\ [POS=%04l,%04v][%p%%]\ [LEN=%L]\ %{fugitive#statusline()}
-" set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [ENCODE=%{&fenc}]\ [POS=%04l,%04v][%p%%]\ [LEN=%L]
-set laststatus=2 " always show the status line
+    set showmatch " show matching brackets
+    set matchtime=5 " how many tenths of a second to blink matching brackets for
+    set hlsearch
+    set incsearch " BUT do highlight as you type you search phrase
+    set scrolloff=3 " Keep 5 lines (top/bottom) for scope
+    set sidescrolloff=3 " Keep 5 lines at the size
+    set vb " blink instead beep
+    set statusline=%f%m%r%h%w\ [TYPE=%Y]\ [ENCODE=%{&fenc}]\ [POS=%04l,%04v][%p%%]\ [LEN=%L]\ %{fugitive#statusline()}
+    " set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [ENCODE=%{&fenc}]\ [POS=%04l,%04v][%p%%]\ [LEN=%L]
+    set laststatus=2 " always show the status line
 " }
 
 " ============= Indent Related ============={
-set nosmartindent " smartindent (filetype indenting instead)
-set autoindent " autoindent (should be overwrote by cindent or filetype indent)
-set cindent " do c-style indenting
-set softtabstop=4 " unify
-set shiftwidth=4 " unify
-set tabstop=4 " real tabs should be 4, but they will show with set list on
-set expandtab
-set copyindent " but above all -- follow the conventions laid before us
+    set nosmartindent " smartindent (filetype indenting instead)
+    set autoindent " autoindent (should be overwrote by cindent or filetype indent)
+    set cindent " do c-style indenting
+    set softtabstop=4 " unify
+    set shiftwidth=4 " unify
+    set tabstop=4 " real tabs should be 4, but they will show with set list on
+    set expandtab
+    set copyindent " but above all -- follow the conventions laid before us
 " }
 
 " ============= Text Formatting/Layout ============={
-set formatoptions=tcrq " See Help (complex)
-set shiftround " when at 3 spaces, and I hit > ... go to 4, not 5
-set nowrap " do not wrap line
-set preserveindent " but above all -- follow the conventions laid before us
-set ignorecase " case insensitive by default
-set smartcase " if there are caps, go case-sensitive
-set completeopt=menu,longest,preview " improve the way autocomplete works
-set nocursorcolumn " show the current column
+    set formatoptions=tcrq " See Help (complex)
+    set shiftround " when at 3 spaces, and I hit > ... go to 4, not 5
+    set nowrap " do not wrap line
+    set preserveindent " but above all -- follow the conventions laid before us
+    set ignorecase " case insensitive by default
+    set smartcase " if there are caps, go case-sensitive
+    set completeopt=menu,longest,preview " improve the way autocomplete works
+    set nocursorcolumn " show the current column
 " }
 
 " ============= Folding ============={
-set foldenable			" Turn on folding
-" set foldmarker={,}		" Fold C style code (only use this as default if you use a high foldlevel)
-" set foldcolumn=2		" Give 1 column for fold markers
-set foldopen-=search	" don't open folds when you search into them
-set foldopen-=undo		" don't open folds when you undo stuff
-set foldmethod=marker " Fold on the marker
-set foldlevel=1000 " Don't autofold anything (but I can still fold manually)
+    set foldenable			" Turn on folding
+    " set foldmarker={,}		" Fold C style code (only use this as default if you use a high foldlevel)
+    " set foldcolumn=2		" Give 1 column for fold markers
+    set foldopen-=search	" don't open folds when you search into them
+    set foldopen-=undo		" don't open folds when you undo stuff
+    set foldmethod=marker " Fold on the marker
+    set foldlevel=1000 " Don't autofold anything (but I can still fold manually)
 
-:highlight Folded guibg=grey guifg=blue         " Customize color folded
-:highlight FoldColumn guibg=darkgrey guifg=white" Customize fold column
+    :highlight Folded guibg=grey guifg=blue         " Customize color folded
+    :highlight FoldColumn guibg=darkgrey guifg=white" Customize fold column
 " }
 
 " ============= Indent Guides ============={
-let g:indent_guides_start_level=2
-let g:indent_guides_indent_levels=20
-let g:indent_guides_color_change_percent=5
-let g:indent_guides_guide_size=1
-let g:indent_guides_space_guides=1
-let g:indent_guides_enable_on_vim_startup = 1
+    let g:indent_guides_start_level=2
+    let g:indent_guides_indent_levels=20
+    let g:indent_guides_color_change_percent=5
+    let g:indent_guides_guide_size=1
+    let g:indent_guides_space_guides=1
+    let g:indent_guides_enable_on_vim_startup = 1
 " }
 
 " ============= Gist ============={
-let g:gist_clip_command = 'xclip -selection clipboard'  " copy the gist code
-let g:gist_detect_filetype = 1                          " detect filetype from filename
-let g:gist_open_browser_after_post = 1                  " open browser after the post
-let g:gist_browser_command = 'google-chrome %URL% &'    " change the browser
-let g:github_user = 'gilsondev'
-let g:github_token = '<insert your token github account>'
+    let g:gist_clip_command = 'xclip -selection clipboard'  " copy the gist code
+    let g:gist_detect_filetype = 1                          " detect filetype from filename
+    let g:gist_open_browser_after_post = 1                  " open browser after the post
+    let g:gist_browser_command = 'google-chrome %URL% &'    " change the browser
+    let g:github_user = 'gilsondev'
+    let g:github_token = '<insert your token github account>'
 " }
 
 " ============= Vim PEP8 ============={
-let g:pep8_args = "--show-source --ignore=E501" "View source and ignore type error E501
-autocmd FileType python map <buffer> <F5> :call Pep8()<CR>
+    let g:pep8_args = "--show-source --ignore=E501" "View source and ignore type error E501
+    autocmd FileType python map <buffer> <F5> :call Pep8()<CR>
 " }
 
 " ============= Mappings =========== {
 
-" ============= Indent ============={
-noremap <F8> gg=G
-inoremap <F8> <ESC>mzgg=G`z<Insert>
-" }
+    " ============= Indent ============={
+        noremap <F8> gg=G
+        inoremap <F8> <ESC>mzgg=G`z<Insert>
+    " }
 
-" ============= Tab navigation ============={
+    " ============= Tab navigation ============={
 
-noremap <C-S-N> :tabnew <CR>
-inoremap <C-S-N> :tabnew <CR><Insert>
+        noremap <C-S-N> :tabnew <CR>
+        inoremap <C-S-N> :tabnew <CR><Insert>
 
-noremap <S-Right> :tabn<CR>
-inoremap <S-Right> <esc>:tabn<CR><Insert>
+        noremap <S-Right> :tabn<CR>
+        inoremap <S-Right> <esc>:tabn<CR><Insert>
 
-noremap <S-Left> :tabprev<CR>
-inoremap <S-Left> <ESC>tabprev<CR><Insert>
+        noremap <S-Left> :tabprev<CR>
+        inoremap <S-Left> <ESC>tabprev<CR><Insert>
 
-" }
+    " }
 
-" ============= Shortcut Save (default in others editors) ============={
-noremap <C-S> :w<CR>
-inoremap <C-S> <ESC>:w<CR><Insert>
-noremap <C-X> :x<CR>
-noremap <C-C> :y <CR>
-" }
+    " ============= Shortcut Save (default in others editors) ============={
+        noremap <C-S> :w<CR>
+        inoremap <C-S> <ESC>:w<CR><Insert>
+        noremap <C-X> :x<CR>
+        noremap <C-C> :y <CR>
+    " }
 
-" ============= Switch background modes ============={
-noremap <leader>l :set background=light<CR>
-noremap <leader>d :set background=dark<CR>
-" }
+    " ============= Switch background modes ============={
+        noremap <leader>l :set background=light<CR>
+        noremap <leader>d :set background=dark<CR>
+    " }
 
-" ============= Shortcuts NERDTree ============={
-noremap <C-B> :NERDTreeToggle<CR>
-" }
+    " ============= Shortcuts NERDTree ============={
+        noremap <C-B> :NERDTreeToggle<CR>
+    " }
 
-" ============= Shortcuts Buffers ============={
-map <A-Left> :bnext <CR>
-map <A-Right> :bprevious <CR>
-" }
+    " ============= Shortcuts Buffers ============={
+        map <A-Left> :bnext <CR>
+        map <A-Right> :bprevious <CR>
+    " }
 
-" ============= Shortcuts Fuzzy Finder ============={
-noremap <C-P> :FufFile<CR>
-noremap <C-M-P> :FufBuffer<CR>
-" }
+    " ============= Shortcuts Fuzzy Finder ============={
+        noremap <C-P> :FufFile **/<CR>
+        noremap <C-G> :FufLine<CR>
+        noremap <C-M-P> :FufBuffer<CR>
+        noremap <C-R> :FufRenewCache<CR>
+    " }
 
-" ============= Shortcuts Complete parenthesis, etc ============={
-imap ( ()<ESC><Insert>
-inoremap ( ()<ESC><Insert>
-inoremap { {<Char-13>}<ESC><Insert>
-inoremap [ []<ESC><Insert>
-inoremap " ""<ESC><Insert>
-inoremap ' ''<ESC><Insert>
-" }
+    " ============= Shortcuts Complete parenthesis, etc ============={
+        imap ( ()<ESC><Insert>
+        inoremap ( ()<ESC><Insert>
+        inoremap { {<Char-13>}<ESC><Insert>
+        inoremap [ []<ESC><Insert>
+        inoremap " ""<ESC><Insert>
+        inoremap ' ''<ESC><Insert>
+    " }
 
-" ============= Shortcuts Fontzoom ============={
-nnoremap <silent> <Plug>(fontzoom-larger)
-\                 :<C-u>Fontzoom +<C-r>=v:count1<CR><CR>
-nnoremap <silent> <Plug>(fontzoom-smaller)
-\                 :<C-u>Fontzoom _<C-r>=v:count1<CR><CR>
+    " ============= Shortcuts Fontzoom ============={
+        nnoremap <silent> <Plug>(fontzoom-larger)
+        \                 :<C-u>Fontzoom +<C-r>=v:count1<CR><CR>
+        nnoremap <silent> <Plug>(fontzoom-smaller)
+        \                 :<C-u>Fontzoom _<C-r>=v:count1<CR><CR>
 
+    " }
 " }
 
 function LoadDjangoGoodies()
