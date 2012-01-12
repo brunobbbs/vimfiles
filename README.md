@@ -39,7 +39,7 @@ Aqui armazeno todas as configurações de plugins, snippets e esquema de cores p
  - Faça o checkout do projeto:
 
 ```bash
-$ git clone git@github.com:gilsondev/vimfiles.git ~/.vim
+$ git clone git://github.com/gilsondev/vimfiles.git ~/.vim
 ```
 
  - Dê permissão de execução no arquivo ``setup.sh`` e rodá-lo:
@@ -54,7 +54,7 @@ $ ./setup.sh
 1. Faça o checkout do projeto:
 
 ```bash
-$ git clone git@github.com:gilsondev/vimfiles.git ~/.vim
+$ git clone git://github.com/gilsondev/vimfiles.git ~/.vim
 ```
 
 2. Crie um link simbólico para o arquivo de configuração ``.vimrc``:
