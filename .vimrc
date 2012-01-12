@@ -137,11 +137,6 @@
 
 " ============= Mappings =========== {
 
-    " ============= Indent ============={
-        noremap <F8> gg=G
-        inoremap <F8> <ESC>mzgg=G`z<Insert>
-    " }
-
     " ============= Tab navigation ============={
 
         noremap <C-S-N> :tabnew <CR>
