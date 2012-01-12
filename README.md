@@ -21,14 +21,15 @@ Aqui armazeno todas as configurações de plugins, snippets e esquema de cores p
 17. Vim Markdown: https://github.com/tpope/vim-markdown
 18. Vim PEP8: https://github.com/jbking/vim-pep8
 19. Sparkup: https://github.com/kogakure/vim-sparkup
-20. TComment: https://github.com/tomtom/tcomment_vim
 21. Vim LaTeX: https://github.com/jcf/vim-latex
 22. Vim Virtualenv: https://github.com/jmcantrell/vim-virtualenv
 23. Pydoc: https://github.com/fs111/pydoc.vim
+24. Vim Powerline: https://github.com/Lokaltog/vim-powerline
+25. Tagbar: https://github.com/vim-scripts/Tagbar
 
 #### Esquema de Cores
 1. Github Theme: https://github.com/nono/github_vim_theme
-2. Railscasts Theme: https://github.com/jpo/vim-railscasts-theme
+2. Railscasts Theme: https://github.com/gilsondev/vim-railscasts-theme (recomendado)
 3. Underwater: https://github.com/vim-scripts/underwater-mod (recomendado)
 4. Solarized: https://github.com/altercation/vim-colors-solarized (recomendado)
 5. Django Smoothy: https://github.com/gilsondev/django_colorschemes.vim
